@@ -40,11 +40,11 @@ int main()
 	{
 		cout << "x= " << x3;
 	}
-	if (d<0)
+	if (d < 0)
 	{
-		cout << "x1= " << x1;
-		cout << "x2= " << x2;
-    }
+		cout << "x1= " << -b / 2 * a<<"-"<< sqrt(d*-1) << "i" << endl;
+		cout << "x1= " << -b / 2 * a<<"+"<< sqrt(d*-1) << "i";
+	}
 
 
 
