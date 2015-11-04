@@ -1,3 +1,6 @@
+/*
+
+Program 1: Zapisuje do pliku N losowych liczb naturalnych.
 
 #include <iostream>
 #include <time.h>
@@ -29,3 +32,24 @@ int main()
 	system("pause");
 }
 
+*/
+
+/*Program 2: Funkcja, która liczy œredni¹ liczb zawartych w pliku*/
+
+#include <iostream>
+#include <time.h>
+#include <fstream>
+using namespace std;
+
+double avg;
+
+int main()
+{
+
+	ifstream plik;
+	plik.open("w.txt");
+		if (!plik)
+			return false;
+	if(plik)
+
+}
