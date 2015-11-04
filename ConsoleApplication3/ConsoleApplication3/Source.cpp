@@ -22,10 +22,10 @@ int main()
 			for (int i = 0;i < N;i++)
 			{
 				tab[i] = rand() % gora + dol;
-				plik <<"s.txt"<< endl;
-				plik.close();
+				plik <<tab[i]<< endl;
+				
 	        }
-
+		plik.close();
 	system("pause");
 }
 
