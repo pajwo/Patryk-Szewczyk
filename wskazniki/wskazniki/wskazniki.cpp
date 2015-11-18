@@ -20,11 +20,12 @@ void wyswietl(double *tab, int N, ostream& plik)
 // Cwiczenie nr 2 - ca³ka
 double calka(double a, double b, double dx, double(*pf)(double))
 {
-	double Pole = 0
-		for (double i = a; i <= b; i += dx)
+	double Pole = 0;
+		for (double i = a; i < b; i += dx)
 		{
-
+			Pole += dx*i*i;
 		}
+		return Pole;
 }
 
 //Cwiczenie nr 3
