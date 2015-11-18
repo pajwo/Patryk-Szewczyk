@@ -1,16 +1,32 @@
 #include <iostream>
 #include <ctime>
 using namespace std;
+
+
+void wypelnij(double *tab, const int N)
+{
+	
+	for (int i = 0; i < N; i++) 
+	{
+		*(tab + i) = rand() % 50;
+	}
+}
+
+void wyswietl(double *tab, int N, ostream& plik)
+{
+	for (int i = 0; i < N; i++)
+		plik << *(tab + i) << endl;
+}
+
+
 int main()
 {
 	srand(time(NULL));
-	const int N = 15;
+	const int N = 5;
 	double tab[N];
-	for (int i = 0; i < N; i++)
-	{
-		*(tab + 1) = rand() % 1000;
-	  cout << *(tab+1) << endl;
-	}
+	wypelnij(tab, N);
+	wyswietl(tab, N, cout);
 
-	while (1);
+
+		system("pause");
 }
