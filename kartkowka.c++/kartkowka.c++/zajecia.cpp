@@ -35,5 +35,16 @@ int main()
 			pH = pH->pNext;
 		}
 
+     }
+
+
+	void wypiszREKURENCYJNIE(Element*pH);
+	{
+		if(pH)
+		{
+			cout << pH->dana;
+			wypiszREKURENCYJNIE(pH->pNext);
+		}
 	}
+
 }
