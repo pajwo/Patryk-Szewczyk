@@ -37,6 +37,7 @@ int main()
 
      }
 
+	//na egzamin-wypisywanie listy od konca-najlepiej rekurencyjnie
 
 	void wypiszREKURENCYJNIE(Element*pH);
 	{
@@ -44,6 +45,16 @@ int main()
 		{
 			cout << pH->dana;
 			wypiszREKURENCYJNIE(pH->pNext);
+		}
+	}
+
+	void usunREKURENCYJNIE_OD_KONCA(Element*pH);
+	{
+		if (pH) 
+		{
+			usunREKURENCYJNIE_OD_KONCA(pH->pNext);
+			cerr << pH->dana; //nieobowiazkowo
+			delete pH;
 		}
 	}
 
