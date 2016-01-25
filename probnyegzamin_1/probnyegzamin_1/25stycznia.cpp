@@ -11,7 +11,7 @@ struct lekarz
 };
 struct wizyta {
 	string imie, nazwisko;
-	string data_wizytxy;
+	string data_wizytyA;
 	wizyta * next,
 		*prev;
 };
